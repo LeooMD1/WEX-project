@@ -11,12 +11,12 @@ public class PlayerController : MonoBehaviour
 
     
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private RectTransform pointer;
+    [SerializeField] private Transform pointer;
+    [SerializeField] private Transform centrePoint;
 
     private float mouseX;
     private float mouseY;
     
-    [SerializeField] Vector2 difference;
     [SerializeField] Vector3 mousePosition;
 
 
@@ -36,17 +36,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
             OnClick();
 
-        difference = transform.position - mousePosition;
-
-        mousePosition = Input.mousePosition;
         
-        mouseRotate = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
-
-        pointer.rotation = Quaternion.Euler(mouseX, mouseY, mouseRotate);        
     }
 
     private void OnClick()
     {
+        mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        mouseRotate = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
+        pointer.rotation = Quaternion.Euler(mouseX, mouseY, mouseRotate);        
+        
         print(mousePosition);
+
     }
 }
