@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float juumpForce;
     [SerializeField] private float holdTime;
     [SerializeField] private float mouseRotate;
+    
+    [SerializeField] private bool isMoving;
+    [SerializeField] private bool directionPicked;
 
 
     
@@ -16,8 +19,10 @@ public class PlayerController : MonoBehaviour
 
     private float mouseX;
     private float mouseY;
-    
-    [SerializeField] Vector3 mousePosition;
+
+    private float horizontal;
+
+    [SerializeField] private Vector3 mousePosition;
 
 
     #endregion
@@ -25,16 +30,21 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        mouseX = Input.GetAxis("Mouse X");
-        mouseY = Input.GetAxis("Mouse Y");
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        mouseX = Input.GetAxis("Mouse X");
+        mouseY = Input.GetAxis("Mouse Y");
         
         if (Input.GetKeyDown(KeyCode.Mouse0))
             OnClick();
+
+        horizontal = Input.GetAxis("Horizontal");
+
+        rb.linearVelocity = new Vector2(horizontal * moveSpeed, rb.linearVelocity.y);
 
         
     }
@@ -42,10 +52,13 @@ public class PlayerController : MonoBehaviour
     private void OnClick()
     {
         mousePosition = Input.mousePosition;
+
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        mouseRotate = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
-        pointer.rotation = Quaternion.Euler(mouseX, mouseY, mouseRotate);        
+        centrePoint.position = mousePosition;
+
+        mouseRotate = Mathf.Atan2(centrePoint.position.y, centrePoint.position.x) * Mathf.Rad2Deg;
+        pointer.rotation = Quaternion.Euler(0, 0, mouseRotate);
         
         print(mousePosition);
 
