@@ -1214,7 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336827225741933904, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.71
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6336827225741933904, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1477,6 +1477,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 57736492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1129856547 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7788705161925987539, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
+  m_PrefabInstance: {fileID: 998806291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1147239084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +1856,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1316710339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2151767341389854160, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
+  m_PrefabInstance: {fileID: 1459053017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1316710344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316710339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da006db2238d0eb499ec1bac441af21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalPost
+  playerCol: {fileID: 1129856547}
 --- !u!1 &1324044325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,7 +1966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1373952320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2044,12 +2067,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336621867997260290, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4858929955034610112, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2151767341389854160, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1316710344}
   m_SourcePrefab: {fileID: 100100000, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
 --- !u!1 &1543508279
 GameObject:
