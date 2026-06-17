@@ -10,6 +10,11 @@ public class Stopwatch : MonoBehaviour
 
     public static bool isCounting;
 
+    private void Start()
+    {
+        isCounting = true;
+    }
+
     public void Update()
     {
         if (isCounting == true)
