@@ -1856,24 +1856,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1316710339 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2151767341389854160, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
-  m_PrefabInstance: {fileID: 1459053017}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1316710344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316710339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da006db2238d0eb499ec1bac441af21d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoalPost
-  playerCol: {fileID: 1129856547}
 --- !u!1 &1324044325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,18 +2047,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6336621867997260290, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4858929955034610112, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
+    - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
+      propertyPath: playerCol
+      value: 
+      objectReference: {fileID: 1129856547}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2151767341389854160, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1316710344}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
 --- !u!1 &1543508279
 GameObject:
