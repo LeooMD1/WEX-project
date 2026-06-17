@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform pointer;
+    
+    [SerializeField] private GameObject pointerObj;
+
     [SerializeField] private Transform centrePoint;
 
     [SerializeField] private Transform groundCheck;
@@ -38,6 +41,8 @@ public class PlayerController : MonoBehaviour
     {
         directionConfirmed = false;
         directionPicked = false;
+
+        pointerObj.SetActive(false);
     }
 
     private bool IsGrounded()
@@ -76,6 +81,8 @@ public class PlayerController : MonoBehaviour
     {
         if (!directionPicked && !directionConfirmed && !isMoving && IsGrounded())
         {
+            pointerObj.SetActive(true);
+
             mousePosition = Input.mousePosition;
 
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -95,19 +102,20 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-            if (directionPicked && Input.GetKeyDown(KeyCode.Mouse0) && !isMoving && IsGrounded())
-            {
-                moveSpeed = 2;
-                juumpForce = 4;
+        if (directionPicked && Input.GetKeyDown(KeyCode.Mouse0) && !isMoving && IsGrounded())
+        {
+            pointerObj.SetActive(false);
+            moveSpeed = 3;
+            juumpForce = 4;
 
-                //rb.AddForce(centrePoint.transform.position * moveSpeed, ForceMode2D.Impulse);
+            //rb.AddForce(centrePoint.transform.position * moveSpeed, ForceMode2D.Impulse);
 
-                rb.AddForceX(centrePoint.position.x, ForceMode2D.Impulse);
-                rb.AddForceY(centrePoint.position.y * juumpForce, ForceMode2D.Impulse);
+            rb.AddForceX(centrePoint.position.x * moveSpeed, ForceMode2D.Impulse);
+            rb.AddForceY(centrePoint.position.y * juumpForce, ForceMode2D.Impulse);
 
-                directionPicked = false;
+            directionPicked = false;
 
-            }
+        }
 
     }
 }

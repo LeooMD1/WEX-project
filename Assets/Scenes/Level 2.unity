@@ -1032,7 +1032,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0.75
+  m_LinearDamping: 0.6
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: bdc8e831a8cfb8b428aca77a2558ee8e, type: 2}
@@ -1179,6 +1179,7 @@ MonoBehaviour:
   directionConfirmed: 0
   rb: {fileID: 1986516957}
   pointer: {fileID: 182633668}
+  pointerObj: {fileID: 182633666}
   centrePoint: {fileID: 1962292794}
   groundCheck: {fileID: 1149417037}
   groundLayer:
