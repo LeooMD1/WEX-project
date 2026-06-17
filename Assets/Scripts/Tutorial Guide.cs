@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,8 @@ public class TutorialGuide : MonoBehaviour
 
 
 
+
+
     private void Start()
     {
         StartCoroutine(IntroAnim());
@@ -20,16 +23,32 @@ public class TutorialGuide : MonoBehaviour
     IEnumerator IntroAnim() // Fade in and out stuff 
     {
         fadeIn.gameObject.SetActive(true);
-        Cursor.lockState = CursorLockMode.Locked;
         yield return new WaitForSeconds(FadeInTime);
         fadeIn.gameObject.SetActive(false);
-        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0f;
     }
 
     IEnumerator OutroAnim()
     {
         fadeOut.gameObject.SetActive(true);
         yield return new WaitForSeconds(fadeOutTime);
+        // trigger 
+    }
+
+    public void StartTutorialLevel1()
+    {
+        Time.timeScale = 1f;
+        
+    }
+
+    public void StartTutorialLevel2()
+    {
+
+    }
+
+    public void StartTutorialLevel3()
+    {
+
     }
 
 

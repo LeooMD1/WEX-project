@@ -60,8 +60,8 @@ public class PlayerController : MonoBehaviour
 
         if (moveSpeed < 0.1f)
             moveSpeed = 0;
-        mouseX = Input.GetAxis("Mouse X");
-        mouseY = Input.GetAxis("Mouse Y");
+        mouseX = Input.GetAxisRaw("Mouse X");
+        mouseY = Input.GetAxisRaw("Mouse Y");
         
         if (Input.GetKeyDown(KeyCode.Mouse0))
             OnClick();
