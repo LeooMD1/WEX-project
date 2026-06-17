@@ -7,6 +7,8 @@ public class GoalPost : MonoBehaviour
     private BoxCollider2D col;
     [SerializeField] private CircleCollider2D playerCol;
 
+    float randomNum;
+
     private void Start()
     {
         col = GetComponent<BoxCollider2D>();
