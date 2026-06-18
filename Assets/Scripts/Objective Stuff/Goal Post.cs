@@ -31,7 +31,6 @@ public class GoalPost : MonoBehaviour
         {
             endLevelScreen.gameObject.SetActive(true);
             Stopwatch.isCounting = false;
-            playerObject.gameObject.GetComponent<PlayerController>().enabled = false; // freezes player movement 
             mainStopWatchText.gameObject.SetActive(false);
         }
     }

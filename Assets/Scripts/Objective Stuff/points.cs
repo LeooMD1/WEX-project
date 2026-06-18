@@ -1,16 +1,24 @@
 using UnityEngine;
+using TMPro;
 
 public class points : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int playerPoints;
+    public TextMeshProUGUI pointsCounter;
+
+    [SerializeField] private PlayerController playerController;
+    [SerializeField] Stopwatch stopwatch;
+    [SerializeField] Obstacle obstacle;
+
+    private void Start()
     {
-        
+        playerPoints = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        pointsCounter.text = playerPoints.ToString();
     }
+
+    
 }

@@ -12,10 +12,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float holdTime;
     [SerializeField] private float mouseRotate;
     
+    [SerializeField] private float timer;
+    [SerializeField] private float timerCooldown;
+    [SerializeField] private float points = 100;
+    
     [SerializeField] private bool isMoving;
     [SerializeField] private bool directionPicked;
     [SerializeField] private bool directionConfirmed; // why are they private if you just end up seralizing them?
-    [SerializeField] private int shotsTaken; //  the number of shots that the player takes 
+    public int shotsTaken; //  the number of shots that the player takes 
 
 
     
@@ -38,8 +42,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Vector3 mousePosition;
 
-    public TextMeshProUGUI shotCounter;
-    public TextMeshProUGUI shotEndCounter;
+    [SerializeField] private TextMeshProUGUI shotCounter;
+    [SerializeField] private TextMeshProUGUI shotEndCounter;
+    [SerializeField] private TextMeshProUGUI pointCounter;
 
     #endregion
 
@@ -95,6 +100,19 @@ public class PlayerController : MonoBehaviour
 
         shotCounter.text = "Shots:" + shotsTaken.ToString();
         shotEndCounter.text = "Shots Taken: " + shotsTaken.ToString();
+
+    
+        timer -= Time.deltaTime;
+
+        if (timer <= 0)
+        {
+            points -= 10;
+            print (points);
+            timer = timerCooldown;
+        }
+
+        points = Mathf.Clamp(points, 0, 110);
+        pointCounter.text = "Points:" + points.ToString();
     }
 
     private void OnClick()
@@ -138,8 +156,13 @@ public class PlayerController : MonoBehaviour
 
             directionPicked = false;
             shotsTaken += 1;
-
+            LosePoints();
         }
 
+    }
+
+    public void LosePoints()
+    {
+        points -= 2;
     }
 }

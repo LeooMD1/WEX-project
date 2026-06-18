@@ -6,13 +6,24 @@ public class Obstacle : MonoBehaviour
     public Transform playerspawn;
     public GameObject player;
 
+    public float playerDeathCount;
+
+
     // sound effect here
+
+    private void Start()
+    {
+        playerDeathCount = 0;
+    }
+
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             player.transform.position = playerspawn.transform.position;
+            player.gameObject.GetComponent<PlayerController>().LosePoints();
         }
     }
 
