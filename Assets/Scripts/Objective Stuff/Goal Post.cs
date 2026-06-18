@@ -16,11 +16,14 @@ public class GoalPost : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        nextLevel();
+        if (collision.gameObject.tag == "Player")
+        {
+            nextLevel();
+        }
     }
 
     private void nextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
     }
 }
