@@ -35,15 +35,4 @@ public class Stopwatch : MonoBehaviour
         completeStopWatchText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
     }
-
-    public void freezeTime()
-    {
-        isCounting = false;
-    }
-
-    public void stopWatchStart()
-    {
-        isCounting = true;
-    }
-
 }
