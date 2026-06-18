@@ -117,12 +117,12 @@ Transform:
   m_GameObject: {fileID: 993095598182733137}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 1.21, z: 0}
-  m_LocalScale: {x: 2.1562676, y: 0.4415, z: 1}
+  m_LocalPosition: {x: 1.1046, y: 0, z: 0}
+  m_LocalScale: {x: 0.9455233, y: 0.4415, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6453365690757557737}
-  m_Father: {fileID: 2372861664562909869}
+  m_Father: {fileID: 3335893104690688813}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7525354608647175012
 SpriteRenderer:
@@ -213,6 +213,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6336827225741933904}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1605355130179122538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3335893104690688813}
+  m_Layer: 0
+  m_Name: Pointer ball thing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3335893104690688813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605355130179122538}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2522886177792629983}
+  m_Father: {fileID: 2372861664562909869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1965703719286390723
 GameObject:
@@ -310,7 +342,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2522886177792629983}
+  - {fileID: 3335893104690688813}
   - {fileID: 1618104261123975745}
   - {fileID: 5538160281191653945}
   m_Father: {fileID: 6336827225741933904}
@@ -392,19 +424,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 0
   juumpForce: 0
+  rotateForce: 0
   holdTime: 0
   mouseRotate: 0
   isMoving: 0
   directionPicked: 0
   directionConfirmed: 0
   rb: {fileID: 7471248469792501188}
-  pointer: {fileID: 2522886177792629983}
+  pointer: {fileID: 3335893104690688813}
   pointerObj: {fileID: 993095598182733137}
   centrePoint: {fileID: 2477400495331500606}
   groundCheck: {fileID: 1618104261123975745}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  sprite: {fileID: 5538160281191653945}
   mousePosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8811076238061057236
 GameObject:
@@ -432,8 +466,8 @@ Transform:
   m_GameObject: {fileID: 8811076238061057236}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4409, y: 0, z: 0}
-  m_LocalScale: {x: 0.1182, y: 1, z: 1}
+  m_LocalPosition: {x: 0.3988, y: 0, z: 0}
+  m_LocalScale: {x: 0.20232293, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2522886177792629983}

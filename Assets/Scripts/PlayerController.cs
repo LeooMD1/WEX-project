@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     #region Variables
     [SerializeField] private float moveSpeed;
     [SerializeField] private float juumpForce;
+    [SerializeField] private float rotateForce;
     [SerializeField] private float holdTime;
     [SerializeField] private float mouseRotate;
     
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    [SerializeField] private Transform sprite;
 
     private float mouseX;
     private float mouseY;
@@ -60,6 +63,10 @@ public class PlayerController : MonoBehaviour
 
         if (moveSpeed < 0.1f)
             moveSpeed = 0;
+
+        if (rotateForce < 1)
+            rotateForce = 0;
+
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
         
@@ -75,6 +82,11 @@ public class PlayerController : MonoBehaviour
 
         moveSpeed = Mathf.Lerp(moveSpeed, 0, 0.002f);
 
+
+        
+        //rotateForce = Mathf.Lerp(rotateForce, 0, 0.0005f);
+        
+        sprite.rotation = Quaternion.Euler(0, 0, rotateForce * rb.linearVelocity.x);
     }
 
     private void OnClick()
@@ -86,6 +98,8 @@ public class PlayerController : MonoBehaviour
             mousePosition = Input.mousePosition;
 
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+            mousePosition -= gameObject.transform.position;
 
             centrePoint.position = mousePosition;
 
@@ -107,6 +121,7 @@ public class PlayerController : MonoBehaviour
             pointerObj.SetActive(false);
             moveSpeed = 3;
             juumpForce = 4;
+            rotateForce = 180;
 
             //rb.AddForce(centrePoint.transform.position * moveSpeed, ForceMode2D.Impulse);
 
