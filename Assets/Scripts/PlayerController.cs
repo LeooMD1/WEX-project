@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private bool isMoving;
     [SerializeField] private bool directionPicked;
-    [SerializeField] private bool directionConfirmed;
+    [SerializeField] private bool directionConfirmed; // why are they private if you just end up seralizing them?
+    [SerializeField] private int shotsTaken; //  the number of shots that the player takes 
 
 
     
@@ -36,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Vector3 mousePosition;
 
+    public TextMeshProUGUI shotCounter;
+    public TextMeshProUGUI shotEndCounter;
 
     #endregion
 
@@ -46,6 +50,7 @@ public class PlayerController : MonoBehaviour
         directionPicked = false;
 
         pointerObj.SetActive(false);
+        shotsTaken = 0;
     }
 
     private bool IsGrounded()
@@ -87,6 +92,9 @@ public class PlayerController : MonoBehaviour
         //rotateForce = Mathf.Lerp(rotateForce, 0, 0.0005f);
         
         sprite.rotation = Quaternion.Euler(0, 0, rotateForce * rb.linearVelocity.x);
+
+        shotCounter.text = "Shots:" + shotsTaken.ToString();
+        shotEndCounter.text = "Shots Taken: " + shotsTaken.ToString();
     }
 
     private void OnClick()
@@ -129,6 +137,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForceY(centrePoint.position.y * juumpForce, ForceMode2D.Impulse);
 
             directionPicked = false;
+            shotsTaken += 1;
 
         }
 
