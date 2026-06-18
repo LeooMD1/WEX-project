@@ -18,7 +18,7 @@ public class GoalPost : MonoBehaviour
     public GameObject playerObject;
     public GameObject mainStopWatchText;
    
-    float randomNum;
+    int randomNum;
 
     private void Start()
     {
@@ -62,7 +62,9 @@ public class GoalPost : MonoBehaviour
         nextLevelButton.gameObject.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(transitionTime); // puts a delay before changing the scene
         Debug.Log("Scene change!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // PUT THE RANDOM SCENE SWAP HERE (either a method or a the whole script)
+        randomNum = Random.Range(0, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
+                                        //or if there are levels you want to skip then youd need to play around with the build profiles and then change the first number
+        SceneManager.LoadScene(randomNum); // PUT THE RANDOM SCENE SWAP HERE (either a method or a the whole script)
 
     }
 
