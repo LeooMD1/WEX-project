@@ -14,6 +14,11 @@ public class MainMenu : MonoBehaviour
     public GameObject startButton;
     public GameObject quitButton;
 
+    public static bool tutorialIsDone;
+
+
+    int randomNum;
+
     public void Start()
     {
         StartCoroutine(IntroAnim());
@@ -46,7 +51,13 @@ public class MainMenu : MonoBehaviour
         startButton.GetComponent<Button>().interactable = false;
         quitButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(fadeOutTime);
-        SceneManager.LoadSceneAsync(1);
+        if (tutorialIsDone == true) { SceneManager.LoadSceneAsync(1);}
+        else
+        {
+            randomNum = Random.Range(4, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
+            Debug.Log("Selected Scene: " + randomNum); //or if there are levels you want to skip then youd need to play around with the build profiles and then change the first number
+            SceneManager.LoadScene(randomNum); // random scene swap
+        }
         
     }
 

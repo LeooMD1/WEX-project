@@ -17,6 +17,7 @@ public class TutorialGuide : MonoBehaviour
     public GameObject cannotClickpopUp;
     public float alertTime = 2;
 
+    int randomNum;
 
 
     private void Start()
@@ -65,7 +66,24 @@ public class TutorialGuide : MonoBehaviour
         yield return new WaitForSeconds(fadeOutTime);
         tutorialPart++;
         PlayerPrefs.SetInt("tutorialPart", tutorialPart); // saves the tutorial part value onto the disk
-        // trigger level change
+
+        if (tutorialPart == 1)
+        {
+            SceneManager.LoadSceneAsync(2);
+        }
+
+        if (tutorialPart == 2)
+        {
+            SceneManager.LoadScene(3);
+        }
+
+        if (tutorialPart == 3)
+        {
+            MainMenu.tutorialIsDone = true;
+            randomNum = Random.Range(4, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
+            Debug.Log("Selected Scene: " + randomNum); //or if there are levels you want to skip then youd need to play around with the build profiles and then change the first number
+            SceneManager.LoadScene(randomNum); // PUT THE RANDOM SCENE SWAP HERE (either a method or a the whole script)
+        }
     }
 
     public void UnfreezePlayer()

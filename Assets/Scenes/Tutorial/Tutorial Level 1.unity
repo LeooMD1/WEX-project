@@ -11044,6 +11044,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1075805858}
     - target: {fileID: 742956133850536362, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
+      propertyPath: pointCounter
+      value: 
+      objectReference: {fileID: 340693783}
+    - target: {fileID: 742956133850536362, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: shotEndCounter
       value: 
       objectReference: {fileID: 484683297}
