@@ -61,9 +61,20 @@ public class GoalPost : MonoBehaviour
         nextLevelButton.gameObject.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(transitionTime); // puts a delay before changing the scene
         Debug.Log("Scene change!");
-        randomNum = Random.Range(0, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
-                                        //or if there are levels you want to skip then youd need to play around with the build profiles and then change the first number
+        randomNum = Random.Range(4, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
+        Debug.Log("Selected Scene: " + randomNum);           //or if there are levels you want to skip then youd need to play around with the build profiles and then change the first number
         SceneManager.LoadScene(randomNum); // PUT THE RANDOM SCENE SWAP HERE (either a method or a the whole script)
+
+    }
+
+    IEnumerator TriggernextTutorialLevel() // This is for NON Random level changes (gets the level id and adds +1 onto it)
+    {
+        fadeOut.gameObject.SetActive(true); // sets the fade out effect as active
+        mainMenuButton.gameObject.GetComponent<Button>().interactable = false;
+        nextLevelButton.gameObject.GetComponent<Button>().interactable = false;
+        yield return new WaitForSeconds(transitionTime); // puts a delay before changing the scene
+        Debug.Log("Scene change!");
+        // SceneManager.
 
     }
 
