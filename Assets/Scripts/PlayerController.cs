@@ -6,7 +6,7 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float moveSpeed;
+    [SerializeField] public float moveSpeed;
     [SerializeField] private float juumpForce;
     [SerializeField] private float rotateForce;
     [SerializeField] private float holdTime;
@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI shotCounter;
     [SerializeField] private TextMeshProUGUI shotEndCounter;
     [SerializeField] private TextMeshProUGUI pointCounter;
+    
+    //[SerializeField] private Audio audioManager;
 
     #endregion
 
@@ -73,7 +75,10 @@ public class PlayerController : MonoBehaviour
             isMoving = false;
 
         if (moveSpeed < 0.1f)
+        {
             moveSpeed = 0;
+            rb.linearVelocityX = 0;
+        }
 
         if (rotateForce < 1)
             rotateForce = 0;
@@ -156,9 +161,13 @@ public class PlayerController : MonoBehaviour
             rotateForce = 180;
 
             //rb.AddForce(centrePoint.transform.position * moveSpeed, ForceMode2D.Impulse);
+            //audioManager.PlaySFX(audioManager.Football);
 
             rb.AddForceX(centrePoint.position.x * moveSpeed, ForceMode2D.Impulse);
             rb.AddForceY(centrePoint.position.y * juumpForce, ForceMode2D.Impulse);
+
+
+            
 
             directionPicked = false;
             shotsTaken += 1;

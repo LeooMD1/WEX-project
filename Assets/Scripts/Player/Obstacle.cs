@@ -5,6 +5,8 @@ public class Obstacle : MonoBehaviour
 {
     public Transform playerspawn;
     public GameObject player;
+    [SerializeField] private Rigidbody2D playerRb;
+    [SerializeField] private PlayerController pc;
 
     public float playerDeathCount;
 
@@ -24,6 +26,8 @@ public class Obstacle : MonoBehaviour
         {
             player.transform.position = playerspawn.transform.position;
             player.gameObject.GetComponent<PlayerController>().LosePoints();
+            playerRb.linearVelocity = Vector2.zero;
+            pc.moveSpeed = 0;
         }
     }
 
