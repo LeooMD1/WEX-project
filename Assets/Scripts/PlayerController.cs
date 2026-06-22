@@ -1,7 +1,8 @@
 using System;
 using System.Collections;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -45,6 +46,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI shotCounter;
     [SerializeField] private TextMeshProUGUI shotEndCounter;
     [SerializeField] private TextMeshProUGUI pointCounter;
+   
+    [SerializeField] private InputActionAsset playerController;
     
     //[SerializeField] private Audio audioManager;
 
@@ -86,8 +89,6 @@ public class PlayerController : MonoBehaviour
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
         
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-            OnClick();
 
         if (directionPicked)
             StartCoroutine(ShootBall());
@@ -126,12 +127,17 @@ public class PlayerController : MonoBehaviour
         pointCounter.text = points.ToString();
     }
 
+    public void clickDetect(InputAction.CallbackContext context)
+    {
+        OnClick();
+    }
+
     private void OnClick()
     {
         if (!directionPicked && !directionConfirmed && !isMoving && IsGrounded())
         {
             pointerObj.SetActive(true);
-
+            
             mousePosition = Input.mousePosition;
 
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
