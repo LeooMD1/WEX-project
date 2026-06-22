@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4669624185439366388}
   - component: {fileID: 5687454356058682146}
-  - component: {fileID: 6336621867997260290}
   - component: {fileID: 8472349673703916719}
+  - component: {fileID: 2245674235007977564}
   m_Layer: 0
   m_Name: Goal Post
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.07, y: -6.96495, z: -10}
-  m_LocalScale: {x: 5.0892873, y: 2.86743, z: 2.86743}
+  m_LocalScale: {x: 0.22089224, y: 0.22089224, z: 0.22089224}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,8 +83,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.15995419, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: -3457448024721243918, guid: 0ae13efc87b129d4a860f61c468c9762, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -93,7 +93,27 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &6336621867997260290
+--- !u!114 &8472349673703916719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151767341389854160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da006db2238d0eb499ec1bac441af21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalPost
+  playerCol: {fileID: 0}
+  endLevelScreen: {fileID: 0}
+  fadeOut: {fileID: 0}
+  transitionTime: 3
+  nextLevelButton: {fileID: 0}
+  mainMenuButton: {fileID: 0}
+  playerObject: {fileID: 0}
+  mainStopWatchText: {fileID: 0}
+--- !u!61 &2245674235007977564
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,31 +151,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 26.250002, y: 12.753297}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 26.250002, y: 12.753297}
   m_EdgeRadius: 0
---- !u!114 &8472349673703916719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2151767341389854160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da006db2238d0eb499ec1bac441af21d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoalPost
-  playerCol: {fileID: 0}
-  endLevelScreen: {fileID: 0}
-  fadeOut: {fileID: 0}
-  transitionTime: 3
-  nextLevelButton: {fileID: 0}
-  mainMenuButton: {fileID: 0}
-  playerObject: {fileID: 0}
-  mainStopWatchText: {fileID: 0}

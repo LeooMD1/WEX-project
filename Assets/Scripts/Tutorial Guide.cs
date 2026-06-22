@@ -13,6 +13,7 @@ public class TutorialGuide : MonoBehaviour
     [SerializeField] Stopwatch stopwatch;
     [SerializeField] private int tutorialPart = 1;
     public GameObject tutorialPopUp1;
+    public GameObject tutorialPopUp2;
     private bool canClick;
     public GameObject cannotClickpopUp;
     public float alertTime = 2;
@@ -51,7 +52,7 @@ public class TutorialGuide : MonoBehaviour
 
         if (tutorialPart == 2)
         {
-            //tutorialPopUp2.gameObject.SetActive(true); (HAVENT CREATED OBJECTS YET)
+            tutorialPopUp2.gameObject.SetActive(true); 
         }
 
         if (tutorialPart == 3)
@@ -64,17 +65,19 @@ public class TutorialGuide : MonoBehaviour
     {
         fadeOut.gameObject.SetActive(true);
         yield return new WaitForSeconds(fadeOutTime);
-        tutorialPart++;
-        PlayerPrefs.SetInt("tutorialPart", tutorialPart); // saves the tutorial part value onto the disk
 
         if (tutorialPart == 1)
         {
             SceneManager.LoadSceneAsync(2);
+            tutorialPart++;
+            PlayerPrefs.SetInt("tutorialPart", tutorialPart); // saves the tutorial part value onto the disk
         }
 
         if (tutorialPart == 2)
         {
             SceneManager.LoadScene(3);
+            tutorialPart++;
+            PlayerPrefs.SetInt("tutorialPart", tutorialPart); // saves the tutorial part value onto the disk
         }
 
         if (tutorialPart == 3)
@@ -91,6 +94,11 @@ public class TutorialGuide : MonoBehaviour
         playerController.enabled = true;
         stopwatch.enabled = true;
         canClick = true;
+    }
+
+    public void tutorialOutro()
+    {
+        StartCoroutine(OutroAnim());
     }
 
     IEnumerator cannotClickAlert()

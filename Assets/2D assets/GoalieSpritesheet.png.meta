@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 2ac38e89bfb4be24c8f9f61a62244ef2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3295047543389893578
+    second: GoalieSpritesheet_0
+  - first:
+      213: -5571879859007347456
+    second: GoalieSpritesheet_1
+  - first:
+      213: 2076019611146455025
+    second: GoalieSpritesheet_2
+  - first:
+      213: 2029830984991658385
+    second: GoalieSpritesheet_3
+  - first:
+      213: -4543260215486549415
+    second: GoalieSpritesheet_4
+  - first:
+      213: -222776859582083529
+    second: GoalieSpritesheet_5
+  - first:
+      213: 5489057505661736303
+    second: GoalieSpritesheet_6
+  - first:
+      213: -7356016240514927393
+    second: GoalieSpritesheet_7
+  - first:
+      213: -8078753126007474169
+    second: GoalieSpritesheet_8
+  - first:
+      213: -5197084499515524719
+    second: GoalieSpritesheet_9
+  - first:
+      213: -6386594877112224814
+    second: GoalieSpritesheet_10
+  - first:
+      213: -1028512163251891259
+    second: GoalieSpritesheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GoalieSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 981
+        height: 1360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac337c5684c5abd20800000000000000
+      internalID: 3295047543389893578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoalieSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 0
+        width: 981
+        height: 1360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191528eb6886b2c10800000000000000
+      internalID: 2029830984991658385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoalieSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 0
+        width: 981
+        height: 1360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65d8a818bc0d2c40800000000000000
+      internalID: 5489057505661736303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoalieSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 0
+        width: 981
+        height: 1360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19930bade2f30e7b0800000000000000
+      internalID: -5197084499515524719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 92b52785a910434429efb7488a4f37e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GoalieSpritesheet_0: 3295047543389893578
+      GoalieSpritesheet_1: -5571879859007347456
+      GoalieSpritesheet_10: -6386594877112224814
+      GoalieSpritesheet_11: -1028512163251891259
+      GoalieSpritesheet_2: 2076019611146455025
+      GoalieSpritesheet_3: 2029830984991658385
+      GoalieSpritesheet_4: -4543260215486549415
+      GoalieSpritesheet_5: -222776859582083529
+      GoalieSpritesheet_6: 5489057505661736303
+      GoalieSpritesheet_7: -7356016240514927393
+      GoalieSpritesheet_8: -8078753126007474169
+      GoalieSpritesheet_9: -5197084499515524719
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
