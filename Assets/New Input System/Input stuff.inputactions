@@ -10,7 +10,7 @@
                     "name": "Shoot",
                     "type": "Value",
                     "id": "5193c744-59f1-429f-8af6-717749073cc0",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true

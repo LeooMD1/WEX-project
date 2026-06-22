@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
         if (moveSpeed < 0.1f)
         {
             moveSpeed = 0;
-            rb.linearVelocityX = 0;
+            //rb.linearVelocityX = 0;
         }
 
         if (rotateForce < 1)
