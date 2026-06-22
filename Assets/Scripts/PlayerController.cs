@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float holdTime;
     [SerializeField] private float mouseRotate;
     
-    [SerializeField] private float timer;
-    [SerializeField] private float timerCooldown;
+    [SerializeField] private float timer = 20;
+    [SerializeField] private float timerCooldown = 20;
     [SerializeField] private float points = 100;
     
     [SerializeField] private bool isMoving;
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
 
         pointerObj.SetActive(false);
         shotsTaken = 0;
+        points = 100;
     }
 
     private bool IsGrounded()
@@ -107,12 +108,17 @@ public class PlayerController : MonoBehaviour
         if (timer <= 0)
         {
             points -= 10;
-            print (points);
+            print ("Points: " + points);
             timer = timerCooldown;
         }
 
-        points = Mathf.Clamp(points, 0, 110);
-        pointCounter.text = "Points:" + points.ToString();
+        if (points < 0)
+        {
+            points = 0;
+        }
+
+        
+        pointCounter.text = points.ToString();
     }
 
     private void OnClick()
