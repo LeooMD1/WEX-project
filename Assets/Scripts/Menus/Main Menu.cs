@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     public GameObject startButton;
     public GameObject quitButton;
 
-    public static bool tutorialIsDone;
+    public static bool tutorialIsDone = false;
 
 
     int randomNum;
@@ -51,7 +51,7 @@ public class MainMenu : MonoBehaviour
         startButton.GetComponent<Button>().interactable = false;
         quitButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(fadeOutTime);
-        if (tutorialIsDone == true) { SceneManager.LoadSceneAsync(1);}
+        if (tutorialIsDone == false) { SceneManager.LoadSceneAsync(1);}
         else
         {
             randomNum = Random.Range(4, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
