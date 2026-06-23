@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 341505564}
   m_Layer: 3
   m_Name: TileMap
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

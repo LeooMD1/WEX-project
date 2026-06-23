@@ -97,11 +97,12 @@ public class PlayerController : MonoBehaviour
         if (rotateForce < 1)
             rotateForce = 0;
 
+        if (Shoot.action.WasPressedThisFrame())
+            OnClick();
+
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
 
-        if (Shoot.action.WasPressedThisFrame())
-            OnClick();
         
 
         if (directionPicked)
