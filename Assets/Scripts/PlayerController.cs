@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform pointer;
-    [SerializeField] private Collider2D col;
+
     
     [SerializeField] private GameObject pointerObj;
 
@@ -68,7 +68,6 @@ public class PlayerController : MonoBehaviour
         shotsTaken = 0;
         points = 100;
 
-        col = GetComponent<Collider2D>();
     }
 
 
