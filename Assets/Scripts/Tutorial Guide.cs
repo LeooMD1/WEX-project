@@ -5,18 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class TutorialGuide : MonoBehaviour
 {
-    public float fadeOutTime = 4f;
-    public float FadeInTime = 4.5f;
+    public float fadeOutTime = 2.5f;
+    public float FadeInTime = 2.5f;
     public GameObject fadeOut;
     public GameObject fadeIn;
     [SerializeField] PlayerController playerController;
     [SerializeField] Stopwatch stopwatch;
-    [SerializeField] private int tutorialPart = 1;
+    [SerializeField] private static int tutorialPart;
     public GameObject tutorialPopUp1;
     public GameObject tutorialPopUp2;
+    public GameObject tutorialPopUp3;
     private bool canClick;
     public GameObject cannotClickpopUp;
-    public float alertTime = 2;
+    public float alertTime = 1.2f;
 
     int randomNum;
 
@@ -57,35 +58,7 @@ public class TutorialGuide : MonoBehaviour
 
         if (tutorialPart == 3)
         {
-            //tutorialPopUp3.gameObject.SetActive(true); (HAVENT CREATED OBJECTS YET)
-        }
-    }
-
-    IEnumerator OutroAnim()
-    {
-        fadeOut.gameObject.SetActive(true);
-        yield return new WaitForSeconds(fadeOutTime);
-
-        if (tutorialPart == 1)
-        {
-            SceneManager.LoadSceneAsync(2);
-            tutorialPart++;
-            PlayerPrefs.SetInt("tutorialPart", tutorialPart); // saves the tutorial part value onto the disk
-        }
-
-        if (tutorialPart == 2)
-        {
-            SceneManager.LoadScene(3);
-            tutorialPart++;
-            PlayerPrefs.SetInt("tutorialPart", tutorialPart); // saves the tutorial part value onto the disk
-        }
-
-        if (tutorialPart == 3)
-        {
-            MainMenu.tutorialIsDone = true;
-            randomNum = Random.Range(4, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
-            Debug.Log("Selected Scene: " + randomNum); //or if there are levels you want to skip then youd need to play around with the build profiles and then change the first number
-            SceneManager.LoadScene(randomNum); // PUT THE RANDOM SCENE SWAP HERE (either a method or a the whole script)
+            tutorialPopUp3.gameObject.SetActive(true);
         }
     }
 
@@ -96,9 +69,19 @@ public class TutorialGuide : MonoBehaviour
         canClick = true;
     }
 
-    public void tutorialOutro()
+    public void EndLevel1()
     {
-        StartCoroutine(OutroAnim());
+        StartCoroutine(Level1Outro());
+    }
+
+    public void EndLevel2()
+    {
+        StartCoroutine(Level2Outro());
+    }
+
+    public void EndLevel3()
+    {
+        StartCoroutine(Level3Outros());
     }
 
     IEnumerator cannotClickAlert()
@@ -106,5 +89,31 @@ public class TutorialGuide : MonoBehaviour
         cannotClickpopUp.gameObject.SetActive(true);
         yield return new WaitForSeconds(alertTime);
         cannotClickpopUp.gameObject.SetActive(false);
+    }
+
+    IEnumerator Level1Outro()
+    {
+        fadeOut.gameObject.SetActive(true);
+        yield return new WaitForSeconds(fadeOutTime);
+        SceneManager.LoadSceneAsync(2);
+        tutorialPart = 2;
+    }
+
+     IEnumerator Level2Outro()
+    {
+        fadeOut.gameObject.SetActive(true);
+        yield return new WaitForSeconds(fadeOutTime);
+        SceneManager.LoadSceneAsync(3);
+        tutorialPart = 3;
+    }
+
+    IEnumerator Level3Outros()
+    {
+        fadeOut.gameObject.SetActive(true);
+        yield return new WaitForSeconds(fadeOutTime);
+        MainMenu.tutorialIsDone = true;
+        randomNum = Random.Range(4, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
+        Debug.Log("Selected Scene: " + randomNum); //or if there are levels you want to skip then youd need to play around with the build profiles and then change the first number
+        SceneManager.LoadScene(randomNum); // PUT THE RANDOM SCENE SWAP HERE (either a method or a the whole script)
     }
 }
