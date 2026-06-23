@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform pointer;
+    [SerializeField] private Collider2D col;
     
     [SerializeField] private GameObject pointerObj;
 
@@ -49,7 +50,11 @@ public class PlayerController : MonoBehaviour
    
     [SerializeField] private InputActionAsset playerController;
     
-    //[SerializeField] private Audio audioManager;
+    [SerializeField] private Audio audioManager;
+
+    private bool isGrounded;
+    private bool wasGrounded;
+    private bool canPlayAudio;
 
     #endregion
 
@@ -62,11 +67,15 @@ public class PlayerController : MonoBehaviour
         pointerObj.SetActive(false);
         shotsTaken = 0;
         points = 100;
+
+        col = GetComponent<Collider2D>();
     }
 
-    private bool IsGrounded()
+
+    private void FixedUpdate()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer); // creates a circle which will allow the player to jump when colliding with the ground layer.
+        wasGrounded = isGrounded;
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     // Update is called once per frame
@@ -88,6 +97,8 @@ public class PlayerController : MonoBehaviour
 
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
+
+        
         
 
         if (directionPicked)
@@ -127,6 +138,14 @@ public class PlayerController : MonoBehaviour
         pointCounter.text = points.ToString();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            audioManager.PlaySFX(audioManager.Hit);
+        }
+    }
+
     public void clickDetect(InputAction.CallbackContext context)
     {
         OnClick();
@@ -134,7 +153,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnClick()
     {
-        if (!directionPicked && !directionConfirmed && !isMoving && IsGrounded())
+        if (!directionPicked && !directionConfirmed && !isMoving && isGrounded)
         {
             pointerObj.SetActive(true);
             
@@ -159,7 +178,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        if (directionPicked && Input.GetKeyDown(KeyCode.Mouse0) && !isMoving && IsGrounded())
+        if (directionPicked && Input.GetKeyDown(KeyCode.Mouse0) && !isMoving && isGrounded)
         {
             pointerObj.SetActive(false);
             moveSpeed = 3;
@@ -167,7 +186,7 @@ public class PlayerController : MonoBehaviour
             rotateForce = 180;
 
             //rb.AddForce(centrePoint.transform.position * moveSpeed, ForceMode2D.Impulse);
-            //audioManager.PlaySFX(audioManager.Football);
+            audioManager.PlaySFX(audioManager.Football);
 
             rb.AddForceX(centrePoint.position.x * moveSpeed, ForceMode2D.Impulse);
             rb.AddForceY(centrePoint.position.y * juumpForce, ForceMode2D.Impulse);
