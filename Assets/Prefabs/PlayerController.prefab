@@ -450,6 +450,9 @@ MonoBehaviour:
   shotEndCounter: {fileID: 0}
   pointCounter: {fileID: 0}
   playerController: {fileID: 0}
+  audioManager: {fileID: 0}
+  Shoot: {fileID: -4312557745270080590, guid: 32cd1f4fc1d6e574c90b87ad96ea8dcc, type: 3}
+  pointPosition: {fileID: 8107056130643270547, guid: 32cd1f4fc1d6e574c90b87ad96ea8dcc, type: 3}
 --- !u!114 &6284304189977833254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,19 +479,7 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 742956133850536362}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: clickDetect
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 5193c744-59f1-429f-8af6-717749073cc0
     m_ActionName: 'Player/Shoot[/Mouse/leftButton]'
   - m_PersistentCalls:
@@ -531,6 +522,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 1e5dd9eb-e9f0-4dbc-9b28-bfa55ebd2d5a
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 742956133850536362}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e704dc94-1ace-4813-92db-31502fb2f4da
+    m_ActionName: 'Player/position[/Mouse/leftButton,/Device Simulator Touchscreen/press]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

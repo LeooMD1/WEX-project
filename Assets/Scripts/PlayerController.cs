@@ -51,6 +51,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputActionAsset playerController;
     
     [SerializeField] private Audio audioManager;
+    
+    [SerializeField] private InputActionReference Shoot;
+    [SerializeField] private InputActionReference pointPosition;
 
     private bool isGrounded;
     private bool wasGrounded;
@@ -97,7 +100,8 @@ public class PlayerController : MonoBehaviour
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
 
-        
+        if (Shoot.action.WasPressedThisFrame())
+            OnClick();
         
 
         if (directionPicked)
@@ -145,18 +149,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void clickDetect(InputAction.CallbackContext context)
-    {
-        OnClick();
-    }
 
-    private void OnClick()
+    public void OnClick()
     {
         if (!directionPicked && !directionConfirmed && !isMoving && isGrounded)
         {
+            var pointerPos = pointPosition.action.ReadValue<Vector2>();
+
+            pointerPos = new Vector3 (pointerPos.x, pointerPos.y, 0);
+            
             pointerObj.SetActive(true);
             
-            mousePosition = Input.mousePosition;
+            mousePosition = pointerPos;
 
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
