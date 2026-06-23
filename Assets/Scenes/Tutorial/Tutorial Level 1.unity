@@ -6202,7 +6202,7 @@ MonoBehaviour:
   tutorialPopUp1: {fileID: 1308047074}
   tutorialPopUp2: {fileID: 1141445834}
   tutorialPopUp3: {fileID: 568203583}
-  cannotClickpopUp: {fileID: 1782025092}
+  cannotClickpopUp: {fileID: 1141445834}
   alertTime: 2
 --- !u!1 &400371357 stripped
 GameObject:

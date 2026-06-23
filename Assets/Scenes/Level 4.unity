@@ -5310,7 +5310,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7637539498740704453, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: m_Name
-      value: Spikes (7)
+      value: bottomless pit
       objectReference: {fileID: 0}
     - target: {fileID: 8549828771065653164, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: m_LocalScale.x
@@ -5378,6 +5378,7 @@ PrefabInstance:
       objectReference: {fileID: 451382521}
     m_RemovedComponents:
     - {fileID: 167995454049401095, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+    - {fileID: 7160229682452048919, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

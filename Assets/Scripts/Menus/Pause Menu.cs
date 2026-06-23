@@ -17,16 +17,6 @@ public class PauseMenu : MonoBehaviour
     public float fadeOutTime = 4f;
     public GameObject fadeOut;
 
-    public void Update()
-    {
-        // There is no need for this in the final game - i just wanted to make this for fun.
-
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Space))
-        {
-            PauseGame();
-            Debug.Log("Game Pause Using Esc Key OR Space Key");
-        }
-    }
 
     public void PauseGame()
     {
