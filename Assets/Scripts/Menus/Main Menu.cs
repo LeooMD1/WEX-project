@@ -29,6 +29,7 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Game has begun");
         StartCoroutine(FadeOutandstart());
+        TutorialGuide.tutorialPart = 0;
     }
 
     public void GameQuit()

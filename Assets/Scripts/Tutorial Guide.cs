@@ -11,13 +11,14 @@ public class TutorialGuide : MonoBehaviour
     public GameObject fadeIn;
     [SerializeField] PlayerController playerController;
     [SerializeField] Stopwatch stopwatch;
-    [SerializeField] private static int tutorialPart;
+    public static int tutorialPart;
     public GameObject tutorialPopUp1;
     public GameObject tutorialPopUp2;
     public GameObject tutorialPopUp3;
     private bool canClick;
     public GameObject cannotClickpopUp;
     public float alertTime = 1.2f;
+    public GameObject tutorialStartPopUp;
 
     int randomNum;
 
@@ -26,7 +27,6 @@ public class TutorialGuide : MonoBehaviour
     {
         StartCoroutine(IntroAnim());
         fadeOut.gameObject.SetActive(false);
-        tutorialPart = PlayerPrefs.GetInt("tutorialPart", 1);
     }
 
     private void Update()
@@ -45,15 +45,16 @@ public class TutorialGuide : MonoBehaviour
         fadeIn.gameObject.SetActive(true);
         yield return new WaitForSeconds(FadeInTime);
         fadeIn.gameObject.SetActive(false);
+        Time.timeScale = 0f;
 
-        if (tutorialPart == 1)
+        if (tutorialPart == 0)
         {
-            tutorialPopUp1.gameObject.SetActive(true);
+            tutorialStartPopUp.gameObject.SetActive(true);
         }
 
         if (tutorialPart == 2)
         {
-            tutorialPopUp2.gameObject.SetActive(true); 
+            tutorialPopUp2.gameObject.SetActive(true);
         }
 
         if (tutorialPart == 3)
@@ -62,11 +63,20 @@ public class TutorialGuide : MonoBehaviour
         }
     }
 
+    public void startTutorial()
+    {
+        tutorialPart = 1;
+        Time.timeScale = 1;
+        tutorialPopUp1.gameObject.SetActive(true);
+    }
+
+
     public void UnfreezePlayer()
     {
         playerController.enabled = true;
         stopwatch.enabled = true;
         canClick = true;
+        Time.timeScale = 1f;
     }
 
     public void EndLevel1()
@@ -111,9 +121,9 @@ public class TutorialGuide : MonoBehaviour
     {
         fadeOut.gameObject.SetActive(true);
         yield return new WaitForSeconds(fadeOutTime);
-        MainMenu.tutorialIsDone = true;
-        randomNum = Random.Range(4, 6); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
+        randomNum = Random.Range(4, 7); //change the "3" to however many levels there are gonna be in by the build index for example if there are 20 scenes then do (0, 20)
         Debug.Log("Selected Scene: " + randomNum); //or if there are levels you want to skip then youd need to play around with the build profiles and then change the first number
         SceneManager.LoadScene(randomNum); // PUT THE RANDOM SCENE SWAP HERE (either a method or a the whole script)
-    }
+        MainMenu.tutorialIsDone = true;
+    } 
 }
