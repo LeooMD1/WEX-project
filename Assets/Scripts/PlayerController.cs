@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private bool wasGrounded;
     private bool canPlayAudio;
+    public static bool canCountdown;
 
     #endregion
 
@@ -70,6 +71,7 @@ public class PlayerController : MonoBehaviour
         pointerObj.SetActive(false);
         shotsTaken = 0;
         points = 100;
+        canCountdown = true;
 
     }
 
@@ -97,7 +99,7 @@ public class PlayerController : MonoBehaviour
         if (rotateForce < 1)
             rotateForce = 0;
 
-        if (Shoot.action.WasPressedThisFrame())
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.touchCount == 1)
             OnClick();
 
         mouseX = Input.GetAxisRaw("Mouse X");
@@ -123,23 +125,40 @@ public class PlayerController : MonoBehaviour
         shotCounter.text = "Shots:" + shotsTaken.ToString();
         shotEndCounter.text = "Shots Taken: " + shotsTaken.ToString();
 
-    
-        timer -= Time.deltaTime;
-
-        if (timer <= 0)
+        if (canCountdown == true)
         {
-            points -= 10;
-            print ("Points: " + points);
-            timer = timerCooldown;
+            timer -= Time.deltaTime;
+
+            if (timer <= 0)
+            {
+                points -= 10;
+                print("Points: " + points);
+                timer = timerCooldown;
+            }
         }
+
+        else if (canCountdown == false)
+        {
+            timer = 20;
+
+            if (timer <= 0)
+            {
+                print("timer frozen");
+            }
+        }
+
 
         if (points < 0)
         {
             points = 0;
         }
 
-        
-        pointCounter.text = points.ToString();
+        if (canCountdown == true) {shotCounter.gameObject.SetActive(true);}
+        else {shotCounter.gameObject.SetActive(false);}
+
+        print(canCountdown.ToString());
+
+        pointCounter.text = "Points: " + points.ToString();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -153,7 +172,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnClick()
     {
-        if (!directionPicked && !directionConfirmed && !isMoving && isGrounded)
+        if (!directionPicked && !directionConfirmed && (Input.GetKeyDown(KeyCode.Mouse0) || Input.touchCount == 1) && !isMoving && isGrounded)
         {
             var pointerPos = pointPosition.action.ReadValue<Vector2>();
 
@@ -182,7 +201,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        if (directionPicked && Input.GetKeyDown(KeyCode.Mouse0) && !isMoving && isGrounded)
+        if (directionPicked && (Input.GetKeyDown(KeyCode.Mouse0) || Input.touchCount == 1) && !isMoving && isGrounded)
         {
             pointerObj.SetActive(false);
             moveSpeed = 3;

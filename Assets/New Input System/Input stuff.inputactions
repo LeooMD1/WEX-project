@@ -51,7 +51,7 @@
                 {
                     "name": "",
                     "id": "d273b3e6-f1c5-4da1-aab7-2ca519f98823",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

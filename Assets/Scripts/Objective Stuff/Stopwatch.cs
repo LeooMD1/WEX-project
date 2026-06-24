@@ -1,5 +1,6 @@
 using System.Threading;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Stopwatch : MonoBehaviour
@@ -31,8 +32,7 @@ public class Stopwatch : MonoBehaviour
         mainStopWatchText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
         // this is for the level complete stopwatch text
-        completeStopWatchText.text = time.ToString();
-        completeStopWatchText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-
+        completeStopWatchText.text = "Time Taken: " + time.ToString();
+        completeStopWatchText.text = "Time Taken: " + string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
