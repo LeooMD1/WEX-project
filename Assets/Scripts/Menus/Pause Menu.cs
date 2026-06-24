@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject pauseManager;
+    
     public GameObject quitMenu;
     public GameObject pauseMenu;
     public GameObject quitButton;
@@ -16,7 +18,6 @@ public class PauseMenu : MonoBehaviour
 
     public float fadeOutTime = 4f;
     public GameObject fadeOut;
-
 
     public void PauseGame()
     {
