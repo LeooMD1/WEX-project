@@ -11283,14 +11283,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: e50a1458f84f51c40a2403879f9be0cf, type: 3}
+  m_Sprite: {fileID: 7991722017021410321, guid: 5c80cf800106b4c4d8ad9bc0ecbca7a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11388,9 +11388,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 369010452}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3533710093159822190, guid: 3cd8019774ea18b47a9a79d5bf87fbac, type: 3}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4895485039043881491, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_Name
       value: Tutorial Pop up UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895485039043881491, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5696136732215445104, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_Pivot.x

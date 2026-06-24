@@ -8276,9 +8276,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: TutorialGuide, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3821978438610597056, guid: e6369e113594e8045ac90b8d1fd94287, type: 3}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4895485039043881491, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_Name
       value: Tutorial Pop up UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895485039043881491, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5696136732215445104, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_Pivot.x
@@ -8342,11 +8362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5696136732215445104, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 173.26068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5696136732215445104, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.8118286
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5696136732215445104, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
