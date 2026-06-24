@@ -60,6 +60,10 @@ public class PlayerController : MonoBehaviour
     private bool canPlayAudio;
     public static bool canCountdown;
 
+    private int coinsAmount;
+    public TextMeshProUGUI coinsCounterMain;
+    public TextMeshProUGUI coinsCounterEnd;
+
     #endregion
 
 
@@ -72,6 +76,7 @@ public class PlayerController : MonoBehaviour
         shotsTaken = 0;
         points = 100;
         canCountdown = true;
+        coinsAmount = 0;
 
     }
 
@@ -159,6 +164,12 @@ public class PlayerController : MonoBehaviour
         print(canCountdown.ToString());
 
         pointCounter.text = "Points: " + points.ToString();
+
+        coinsCounterMain.text = "Coins: " + coinsAmount.ToString();
+        coinsCounterEnd.text = "Coins Collected: " + coinsAmount.ToString();
+
+        if (canCountdown == true) { coinsCounterMain.gameObject.SetActive(true); }
+        else if (canCountdown == false) { coinsCounterMain.gameObject.SetActive(false); }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -224,8 +235,24 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Coin"))
+        {
+            coinsAmount += 1;
+            Destroy(collision.gameObject);
+            points += 10;
+            // play sound effect
+            Debug.Log("Coins Collected: " + coinsAmount);
+        }
+    }
+
+
+
     public void LosePoints()
     {
         points -= 2;
     }
+
+
 }
