@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float points = 100;
     
     [SerializeField] private bool isMoving;
-    [SerializeField] private bool directionPicked;
+    [SerializeField] public bool directionPicked;
     [SerializeField] private bool directionConfirmed; // why are they private if you just end up seralizing them?
     public int shotsTaken; //  the number of shots that the player takes 
 
@@ -98,13 +98,12 @@ public class PlayerController : MonoBehaviour
         if (moveSpeed < 0.1f)
         {
             moveSpeed = 0;
-            //rb.linearVelocityX = 0;
         }
 
         if (rotateForce < 1)
             rotateForce = 0;
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.touchCount == 1)
+        if (Shoot.action.WasPressedThisFrame())
             OnClick();
 
         mouseX = Input.GetAxisRaw("Mouse X");
@@ -170,6 +169,11 @@ public class PlayerController : MonoBehaviour
 
         if (canCountdown == true) { coinsCounterMain.gameObject.SetActive(true); }
         else if (canCountdown == false) { coinsCounterMain.gameObject.SetActive(false); }
+
+        if (directionPicked)
+            pointerObj.SetActive(true);
+        else
+            pointerObj.SetActive(false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -183,7 +187,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnClick()
     {
-        if (!directionPicked && !directionConfirmed && (Input.GetKeyDown(KeyCode.Mouse0) || Input.touchCount == 1) && !isMoving && isGrounded)
+        if (!directionPicked && !directionConfirmed && (Shoot.action.WasPressedThisFrame()) && !isMoving && isGrounded)
         {
             var pointerPos = pointPosition.action.ReadValue<Vector2>();
 
@@ -212,7 +216,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        if (directionPicked && (Input.GetKeyDown(KeyCode.Mouse0) || Input.touchCount == 1) && !isMoving && isGrounded)
+        if (directionPicked && (Shoot.action.WasPressedThisFrame()) && !isMoving && isGrounded)
         {
             pointerObj.SetActive(false);
             moveSpeed = 3;

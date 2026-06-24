@@ -57,6 +57,7 @@ public class GoalKeeper : MonoBehaviour
             player.gameObject.GetComponent<PlayerController>().LosePoints();
             playerRb.linearVelocity = Vector2.zero;
             pc.moveSpeed = 0;
+            pc.directionPicked = false;
         }
     }
 
