@@ -4986,6 +4986,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1917870437}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 400371357}
@@ -5063,6 +5067,10 @@ PrefabInstance:
       propertyPath: pc
       value: 
       objectReference: {fileID: 1917870437}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
@@ -5215,6 +5223,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1917870437}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 400371357}
@@ -5287,6 +5299,10 @@ PrefabInstance:
       propertyPath: pc
       value: 
       objectReference: {fileID: 1917870437}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
@@ -5361,6 +5377,10 @@ PrefabInstance:
       propertyPath: pc
       value: 
       objectReference: {fileID: 1917870437}
+    - target: {fileID: 5384075607741405960, guid: 3fad519610f83b94bb3bf657f078f3df, type: 3}
+      propertyPath: audios
+      value: 
+      objectReference: {fileID: 297902784}
     - target: {fileID: 5384075607741405960, guid: 3fad519610f83b94bb3bf657f078f3df, type: 3}
       propertyPath: player
       value: 
@@ -5476,6 +5496,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.23
@@ -6099,6 +6139,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1917870437}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 400371357}
@@ -6123,6 +6167,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.06
@@ -6197,6 +6261,7 @@ MonoBehaviour:
   player: {fileID: 400371357}
   playerRb: {fileID: 1917870438}
   pc: {fileID: 1917870437}
+  audio: {fileID: 0}
   playerDeathCount: 0
 --- !u!114 &1521485134 stripped
 MonoBehaviour:
@@ -6513,6 +6578,7 @@ MonoBehaviour:
   player: {fileID: 400371357}
   playerRb: {fileID: 1917870438}
   pc: {fileID: 1917870437}
+  audio: {fileID: 0}
   playerDeathCount: 0
 --- !u!1 &1898270717 stripped
 GameObject:
@@ -6535,6 +6601,7 @@ MonoBehaviour:
   player: {fileID: 400371357}
   playerRb: {fileID: 1917870438}
   pc: {fileID: 1917870437}
+  audio: {fileID: 0}
   playerDeathCount: 0
 --- !u!1 &1906183715
 GameObject:
@@ -6683,6 +6750,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.42

@@ -4239,6 +4239,7 @@ MonoBehaviour:
   player: {fileID: 400371357}
   playerRb: {fileID: 1917870438}
   pc: {fileID: 1917870437}
+  audio: {fileID: 0}
   playerDeathCount: 0
 --- !u!114 &1521485134 stripped
 MonoBehaviour:

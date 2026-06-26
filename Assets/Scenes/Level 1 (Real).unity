@@ -8702,6 +8702,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
+      propertyPath: audios
+      value: 
+      objectReference: {fileID: 2118366385}
+    - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
       propertyPath: fadeOut
       value: 
       objectReference: {fileID: 738101075}
@@ -9464,6 +9468,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1917870437}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 2118366385}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 400371357}
@@ -9791,6 +9799,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5384075607741405960, guid: 3fad519610f83b94bb3bf657f078f3df, type: 3}
+      propertyPath: audios
+      value: 
+      objectReference: {fileID: 2118366385}
     - target: {fileID: 5384075607741405960, guid: 3fad519610f83b94bb3bf657f078f3df, type: 3}
       propertyPath: player
       value: 
