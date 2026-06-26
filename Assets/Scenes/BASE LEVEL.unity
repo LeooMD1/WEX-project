@@ -2858,6 +2858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97c41c4e648a14b9fb5d29f8770aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  pauseManager: {fileID: 0}
   quitMenu: {fileID: 66611796}
   pauseMenu: {fileID: 1033054037}
   quitButton: {fileID: 1178831534}
@@ -3226,7 +3227,7 @@ PrefabInstance:
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: playerspawn
       value: 
-      objectReference: {fileID: 1917870439}
+      objectReference: {fileID: 451382521}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4235,7 +4236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 1917870439}
+  playerspawn: {fileID: 451382521}
   player: {fileID: 400371357}
   playerRb: {fileID: 1917870438}
   pc: {fileID: 1917870437}
@@ -4830,11 +4831,6 @@ MonoBehaviour:
 --- !u!50 &1917870438 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7471248469792501188, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
-  m_PrefabInstance: {fileID: 1917870436}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1917870439 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2372861664562909869, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
   m_PrefabInstance: {fileID: 1917870436}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2009819697
