@@ -11609,6 +11609,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 400371363}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 1698090530}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 400371357}
@@ -12875,6 +12879,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 400371363}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 1698090530}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 400371357}
@@ -12956,6 +12964,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3821978438610597056, guid: e6369e113594e8045ac90b8d1fd94287, type: 3}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -13061,6 +13073,18 @@ PrefabInstance:
     - target: {fileID: 5696136732215445104, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397302907998938735, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3443396
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397302907998938735, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.39358613
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397302907998938735, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13207,7 +13231,7 @@ PrefabInstance:
     - target: {fileID: 742956133850536362, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: coinsCounterEnd
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6454446087130924614}
     - target: {fileID: 742956133850536362, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: coinsCounterMain
       value: 
@@ -13215,10 +13239,6 @@ PrefabInstance:
     - target: {fileID: 1965703719286390723, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: m_Name
       value: PlayerController
-      objectReference: {fileID: 0}
-    - target: {fileID: 2372861664562909869, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6336827225741933904, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13370,8 +13390,8 @@ Transform:
   m_Children:
   - {fileID: 1722007731}
   - {fileID: 846760114}
-  - {fileID: 1295594093}
   - {fileID: 1838596968}
+  - {fileID: 1295594093}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2083101786
@@ -13568,6 +13588,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a129bcc66b8bb04b86572a413a71241, type: 3}
+--- !u!114 &6454446087130924614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3824805904295896362, guid: 6a129bcc66b8bb04b86572a413a71241, type: 3}
+  m_PrefabInstance: {fileID: 6454446087130924613}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

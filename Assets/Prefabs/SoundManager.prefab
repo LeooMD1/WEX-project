@@ -53,6 +53,7 @@ MonoBehaviour:
   Cheering: {fileID: 8300000, guid: 9f1a41ec7b1de6648aa79f72c6b0b043, type: 3}
   Pop: {fileID: 8300000, guid: 3398d686343bd474face0f5097084132, type: 3}
   Whistle: {fileID: 8300000, guid: 6e3766b3e73f12144847b25ee78ebf45, type: 3}
+  coin: {fileID: 8300000, guid: 3f93ec5277020b94f8cfd0c8a5e2c025, type: 3}
 --- !u!1 &1038959430888429026
 GameObject:
   m_ObjectHideFlags: 0

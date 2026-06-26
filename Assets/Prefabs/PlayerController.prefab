@@ -340,7 +340,7 @@ Transform:
   m_GameObject: {fileID: 4695215693615991615}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.62, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -453,6 +453,8 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   Shoot: {fileID: -4312557745270080590, guid: 32cd1f4fc1d6e574c90b87ad96ea8dcc, type: 3}
   pointPosition: {fileID: 8107056130643270547, guid: 32cd1f4fc1d6e574c90b87ad96ea8dcc, type: 3}
+  coinsCounterMain: {fileID: 0}
+  coinsCounterEnd: {fileID: 0}
 --- !u!114 &6284304189977833254
 MonoBehaviour:
   m_ObjectHideFlags: 0

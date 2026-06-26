@@ -12,6 +12,7 @@ public class Audio : MonoBehaviour
     public AudioClip Cheering;
     public AudioClip Pop;
     public AudioClip Whistle;
+    public AudioClip coin;
   
     public void PlaySFX(AudioClip clip)
     {

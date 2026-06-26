@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
         pointerObj.SetActive(false);
         shotsTaken = 0;
-        points = 100;
+        points = 102;
         canCountdown = true;
         coinsAmount = 0;
 
@@ -243,10 +243,10 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("Coin"))
         {
+            audioManager.PlaySFX(audioManager.coin);
             coinsAmount += 1;
             Destroy(collision.gameObject);
             points += 10;
-            // play sound effect
             Debug.Log("Coins Collected: " + coinsAmount);
         }
     }

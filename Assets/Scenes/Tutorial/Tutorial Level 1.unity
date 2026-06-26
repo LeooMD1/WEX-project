@@ -4153,6 +4153,46 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483648
+  - first: {x: -22, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 2
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483648
+  - first: {x: -21, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 2
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483648
+  - first: {x: -20, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 2
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483648
+  - first: {x: -19, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 2
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483648
   - first: {x: -8, y: -8, z: 0}
     second:
       serializedVersion: 2
@@ -6776,7 +6816,7 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - serializedVersion: 2
-    m_RefCount: 326
+    m_RefCount: 330
     m_Data: {fileID: 11400000, guid: f5219d29beb1e41469badfc0d77fe4d9, type: 2}
   - serializedVersion: 2
     m_RefCount: 189
@@ -6786,7 +6826,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 6af5b5699c46f0d43b1214d18c08b791, type: 2}
   m_TileSpriteArray:
   - serializedVersion: 2
-    m_RefCount: 326
+    m_RefCount: 330
     m_Data: {fileID: 793031715073669144, guid: d8085cee85f54c8488e580fa5ef205f8, type: 3}
   - serializedVersion: 2
     m_RefCount: 63
@@ -6796,7 +6836,7 @@ Tilemap:
     m_Data: {fileID: 7932798033344189819, guid: 31833be59e9e197489c7afcce98d7c41, type: 3}
   m_TileMatrixArray:
   - serializedVersion: 2
-    m_RefCount: 326
+    m_RefCount: 330
     m_Data:
       e00: 1
       e01: 0
@@ -6879,7 +6919,7 @@ Tilemap:
     m_RefCount: 189
     m_Data: {r: 0, g: 0, b: 0, a: 1}
   - serializedVersion: 2
-    m_RefCount: 326
+    m_RefCount: 330
     m_Data: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -7189,7 +7229,7 @@ Transform:
   m_GameObject: {fileID: 451382520}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.68, y: -4.83, z: -10}
+  m_LocalPosition: {x: -16.43, y: -4.83, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8874,6 +8914,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 742956133850536362, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
+      propertyPath: audios
+      value: 
+      objectReference: {fileID: 2142852755}
+    - target: {fileID: 742956133850536362, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: shotCounter
       value: 
       objectReference: {fileID: 1075805858}
@@ -8907,11 +8951,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336827225741933904, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.82
+      value: -16.44
       objectReference: {fileID: 0}
     - target: {fileID: 6336827225741933904, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.713662
+      value: -4.68
       objectReference: {fileID: 0}
     - target: {fileID: 6336827225741933904, guid: e618e2bdd96dc67469d8e419ea64e709, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9302,6 +9346,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3533710093159822190, guid: 3cd8019774ea18b47a9a79d5bf87fbac, type: 3}
     - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152894907508470971, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -9316,8 +9364,8 @@ PrefabInstance:
     - target: {fileID: 3861378305378798385, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_text
       value: "F.O.C. is a game of precision and timing. Tap once in a direction to
-        aim, tap again to shoot. The further away you tap, the further you\u2019ll
-        go.\n"
+        aim, this choice can't be undone, tap again to shoot. The further you tap,
+        the further you\u2019ll go. \nGood luck\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4895485039043881491, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_Name
@@ -9406,6 +9454,10 @@ PrefabInstance:
     - target: {fileID: 5696136732215445104, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121345099975893525, guid: a5cd4d150065b014383883d5f31286b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -48
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
