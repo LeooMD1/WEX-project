@@ -4531,7 +4531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97c41c4e648a14b9fb5d29f8770aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
-  pauseManager: {fileID: 0}
   quitMenu: {fileID: 66611796}
   pauseMenu: {fileID: 1033054037}
   quitButton: {fileID: 1178831534}
@@ -6143,17 +6142,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1463401251678915147, guid: 892d6208d6333ae4b95bb26450ce309c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2521173197205457550, guid: 892d6208d6333ae4b95bb26450ce309c, type: 3}
       propertyPath: m_Name
       value: Coin Object
       objectReference: {fileID: 0}
     - target: {fileID: 8901316428299252537, guid: 892d6208d6333ae4b95bb26450ce309c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.08
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 8901316428299252537, guid: 892d6208d6333ae4b95bb26450ce309c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.31
+      value: 10.63
       objectReference: {fileID: 0}
     - target: {fileID: 8901316428299252537, guid: 892d6208d6333ae4b95bb26450ce309c, type: 3}
       propertyPath: m_LocalPosition.z
