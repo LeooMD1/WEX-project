@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2247840628405839088}
   - component: {fileID: 3223933435718050622}
-  - component: {fileID: 9196976313428174746}
   - component: {fileID: 8673590376961406744}
+  - component: {fileID: 371919176783669605}
   m_Layer: 0
   m_Name: Spikes Variant 2
   m_TagString: Untagged
@@ -93,23 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &9196976313428174746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7418480710809484509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 0}
-  player: {fileID: 0}
-  playerRb: {fileID: 0}
-  pc: {fileID: 0}
-  playerDeathCount: 0
 --- !u!61 &8673590376961406744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,3 +139,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 7.71, y: 4.87}
   m_EdgeRadius: 0
+--- !u!114 &371919176783669605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418480710809484509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  playerspawn: {fileID: 0}
+  player: {fileID: 0}
+  playerRb: {fileID: 0}
+  pc: {fileID: 0}
+  audio: {fileID: 0}
+  playerDeathCount: 0

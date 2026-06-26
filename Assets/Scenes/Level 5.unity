@@ -1938,7 +1938,7 @@ Tilemap:
     m_Data: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 0, b: 0.8279028, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -32, y: -13, z: 0}
   m_Size: {x: 64, y: 30, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -1990,6 +1990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97c41c4e648a14b9fb5d29f8770aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  pauseManager: {fileID: 0}
   quitMenu: {fileID: 1090490568}
   pauseMenu: {fileID: 1090490572}
   quitButton: {fileID: 1090490569}
@@ -2991,6 +2992,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
+      propertyPath: audios
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
       propertyPath: fadeOut
       value: 
       objectReference: {fileID: 2009819699}
@@ -3359,7 +3364,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 8a3ee3ab319824746bda07aa80d6dad5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

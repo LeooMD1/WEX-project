@@ -8,6 +8,7 @@ public class GoalKeeper : MonoBehaviour
     public GameObject player;
     [SerializeField] private Rigidbody2D playerRb; // reference to the player object's rigidbody.
     [SerializeField] private PlayerController pc;
+    [SerializeField] private Audio audios;
 
 
     [Header("Goal Keeper Movement References")]
@@ -58,6 +59,7 @@ public class GoalKeeper : MonoBehaviour
             playerRb.linearVelocity = Vector2.zero;
             pc.moveSpeed = 0;
             pc.directionPicked = false;
+            audios.PlaySFX(audios.Whistle);
         }
     }
 

@@ -9,6 +9,7 @@ public class GoalPost : MonoBehaviour
 {
     private BoxCollider2D col;
     [SerializeField] private CircleCollider2D playerCol;
+    [SerializeField] private Audio audios;
 
     public GameObject endLevelScreen;
     public GameObject fadeOut;
@@ -34,6 +35,7 @@ public class GoalPost : MonoBehaviour
             mainStopWatchText.gameObject.SetActive(false);
             PlayerController.canCountdown = false;
             playerObject.GetComponent<PlayerController>().enabled = false;
+            audios.PlaySFX(audios.Cheering);
         }
     }
 

@@ -9,6 +9,9 @@ public class Audio : MonoBehaviour
     [Header("---------- Audio Clip ----------")]
     public AudioClip Football;
     public AudioClip Hit;
+    public AudioClip Cheering;
+    public AudioClip Pop;
+    public AudioClip Whistle;
   
     public void PlaySFX(AudioClip clip)
     {

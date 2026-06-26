@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4495824023608580856}
   - component: {fileID: 6998048073788167068}
   - component: {fileID: 5384075607741405960}
-  - component: {fileID: 8624139013078732955}
   - component: {fileID: 6958938404037014153}
   - component: {fileID: 1777529270128652705}
   m_Layer: 0
@@ -114,36 +113,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2
+  speed: 1
   index: 0
   canLoop: 1
---- !u!50 &8624139013078732955
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7977167389369268466}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &6958938404037014153
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class Obstacle : MonoBehaviour
     public GameObject player;
     [SerializeField] private Rigidbody2D playerRb;
     [SerializeField] private PlayerController pc;
+    [SerializeField] private Audio audio;
 
     public float playerDeathCount;
 
@@ -29,6 +30,7 @@ public class Obstacle : MonoBehaviour
             playerRb.linearVelocity = Vector2.zero;
             pc.moveSpeed = 0;
             pc.directionPicked = false;
+            audio.PlaySFX(audio.Pop);
         }
     }
 

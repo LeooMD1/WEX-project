@@ -49,7 +49,10 @@ MonoBehaviour:
   musicSouce: {fileID: 2178207147772764251}
   SFXSource: {fileID: 1299997352029489554}
   Football: {fileID: 8300000, guid: e3916acd0747cc44b851dd556b58422c, type: 3}
-  Hit: {fileID: 8300000, guid: ddb53a6f09dcc404d869d0ee14a21193, type: 3}
+  Hit: {fileID: 8300000, guid: 9130cb6a6a5152c4cbc1327293a21868, type: 3}
+  Cheering: {fileID: 8300000, guid: 9f1a41ec7b1de6648aa79f72c6b0b043, type: 3}
+  Pop: {fileID: 8300000, guid: 3398d686343bd474face0f5097084132, type: 3}
+  Whistle: {fileID: 8300000, guid: 6e3766b3e73f12144847b25ee78ebf45, type: 3}
 --- !u!1 &1038959430888429026
 GameObject:
   m_ObjectHideFlags: 0
