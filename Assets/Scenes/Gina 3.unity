@@ -5564,10 +5564,7 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1844283808}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
 --- !u!1 &1033054037 stripped
 GameObject:
@@ -5784,6 +5781,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
+      propertyPath: audios
+      value: 
+      objectReference: {fileID: 297902784}
     - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
       propertyPath: fadeOut
       value: 
@@ -6235,34 +6236,8 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1517935307}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
---- !u!1 &1517935306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 1517935305}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1517935307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517935306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  audio: {fileID: 0}
-  playerDeathCount: 0
 --- !u!114 &1521485134 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3824805904295896362, guid: 6a129bcc66b8bb04b86572a413a71241, type: 3}
@@ -6557,52 +6532,6 @@ Transform:
   - {fileID: 341505560}
   m_Father: {fileID: 1362623977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1844283807 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 1017929348}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1844283808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844283807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  audio: {fileID: 0}
-  playerDeathCount: 0
---- !u!1 &1898270717 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 1992446587}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1898270718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898270717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  audio: {fileID: 0}
-  playerDeathCount: 0
 --- !u!1 &1906183715
 GameObject:
   m_ObjectHideFlags: 0
@@ -6818,10 +6747,7 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1898270718}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
 --- !u!1001 &2009819697
 PrefabInstance:

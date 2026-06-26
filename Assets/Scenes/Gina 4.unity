@@ -2242,6 +2242,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1917870437}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 400371357}
@@ -2418,6 +2422,10 @@ PrefabInstance:
       propertyPath: pc
       value: 
       objectReference: {fileID: 1917870437}
+    - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
     - target: {fileID: 8958798316323570753, guid: eb41d8495f6f3c244ae65f907668c90a, type: 3}
       propertyPath: player
       value: 
@@ -2605,50 +2613,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &762835264 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 1460974488}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &762835265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762835264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  playerDeathCount: 0
---- !u!1 &770005206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 2041683246}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &770005207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770005206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  playerDeathCount: 0
 --- !u!1 &869091405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2785,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.74
@@ -2869,10 +2853,7 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1350184215}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
 --- !u!1 &1013592341
 GameObject:
@@ -3009,28 +2990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!1 &1156151386 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 1308946017}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1156151387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156151386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  playerDeathCount: 0
 --- !u!1 &1162682859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3189,6 +3148,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
+      propertyPath: audios
+      value: 
+      objectReference: {fileID: 297902784}
     - target: {fileID: 8472349673703916719, guid: 14b628e15331a5443a57e0d29d657cf6, type: 3}
       propertyPath: fadeOut
       value: 
@@ -3461,6 +3424,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.14
@@ -3509,55 +3492,8 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1156151387}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
---- !u!1 &1350184214 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 969192081}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1350184215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350184214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  playerDeathCount: 0
---- !u!1 &1351828612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 1646490005}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1351828613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351828612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  playerDeathCount: 0
 --- !u!1 &1362623976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,6 +3536,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.75
@@ -3648,10 +3604,7 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 762835265}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
 --- !u!1001 &1517935305
 PrefabInstance:
@@ -3661,6 +3614,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.81
@@ -3709,33 +3682,8 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1517935307}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
---- !u!1 &1517935306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-  m_PrefabInstance: {fileID: 1517935305}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1517935307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517935306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a56e72a3df5f9d4ca949f942f485b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
-  playerspawn: {fileID: 451382521}
-  player: {fileID: 400371357}
-  playerRb: {fileID: 1917870438}
-  pc: {fileID: 1917870437}
-  playerDeathCount: 0
 --- !u!114 &1521485134 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3824805904295896362, guid: 6a129bcc66b8bb04b86572a413a71241, type: 3}
@@ -3851,6 +3799,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.04
@@ -3899,10 +3867,7 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1351828613}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
 --- !u!1 &1722007727
 GameObject:
@@ -4550,6 +4515,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 1917870437}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 297902784}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 400371357}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1917870438}
+    - target: {fileID: 371919176783669605, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
+      propertyPath: playerspawn
+      value: 
+      objectReference: {fileID: 451382521}
     - target: {fileID: 2247840628405839088, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.04
@@ -4598,10 +4583,7 @@ PrefabInstance:
     - {fileID: 9196976313428174746, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7418480710809484509, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 770005207}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8847488dfb0c1aa4ebf511ce0b09f7f9, type: 3}
 --- !u!1 &2062038304
 GameObject:
