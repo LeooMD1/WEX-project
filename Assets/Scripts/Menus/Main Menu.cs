@@ -79,7 +79,7 @@ public class MainMenu : MonoBehaviour
         quitButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(fadeOutTime);
         Debug.Log("Player has Quit the game!"); // This is for me to check that the method is actually running beacuse there is no way of showing it within editor
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 
     IEnumerator IntroAnim()

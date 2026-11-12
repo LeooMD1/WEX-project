@@ -71,7 +71,7 @@ public class PauseMenu : MonoBehaviour
         
         if (Application.isPlaying)
         {
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 
